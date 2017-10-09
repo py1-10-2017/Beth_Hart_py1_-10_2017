@@ -14,5 +14,5 @@ def show_user():
        
 
 
-# app.run(host="0.0.0.0", port=int('8080'), debug=True)
-app.run(debug=True)
+app.run(host="0.0.0.0", port=int('8080'), debug=True)
+# app.run(debug=True)

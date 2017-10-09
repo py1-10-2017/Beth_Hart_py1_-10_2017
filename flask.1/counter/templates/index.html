@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Counter</h1>
+    
+        <form action="/add" method="post">
+            <p name="counter">{{ session['counter']}}</p>
+            <input type="submit" value="Submit"/>
+      
+      <form action="/reset" method="post">
+             <input type="submit" value="reset"/>
+        </form>
+    </body>
+</html>
