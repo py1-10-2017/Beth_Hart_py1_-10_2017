@@ -5,11 +5,11 @@
     </head>
     <body>
         <h1>Counter</h1>
-    
+            <p name="counter">{{session["counter"]}}</p>
         <form action="/add" method="post">
-            <p name="counter">{{ session['counter']}}</p>
+            
             <input type="submit" value="Submit"/>
-      
+      </form>
       <form action="/reset" method="post">
              <input type="submit" value="reset"/>
         </form>
