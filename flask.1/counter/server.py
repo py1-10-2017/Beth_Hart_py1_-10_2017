@@ -14,13 +14,11 @@ def start():
 @app.route("/add", methods=["POST"])
 def count():
      session['counter'] += 2
-    #  return render_template("index.html")
      return redirect("/")
 
 #reset not working
 @app.route("/reset", methods=["POST"])
 def reset():
     session['counter'] = 0
-    # return render_template("index.html")
     return redirect("/")
 app.run(host="0.0.0.0", port=int("8080"), debug=True)
